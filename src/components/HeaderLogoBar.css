@@ -1,0 +1,107 @@
+.header{
+    height:50px;
+    width:100vw;
+    background: #050505;
+    color :white;
+    display: flex;
+    justify-content: space-between; 
+    gap:12px;
+
+
+
+
+}
+.left{
+    display:flex;
+    gap:20px;
+    width: 250px;
+    flex-shrink: 1;
+}
+.middle{
+    background: rgb(39, 34, 34);
+    border-radius: 20px;
+    display:flex;
+    gap:12px;
+    width:45vw;
+    height:30px;
+    margin:auto;
+    justify-content: space-around;
+    border: 3px solid white;
+    flex-shrink: 2;
+}
+
+.right{
+    display:flex;
+    flex-shrink: 1;
+    gap:10px;
+}
+input{
+    background-color:rgb(39, 34, 34);
+    font-size: 16px;
+    height:23px;
+    width: 25vw;
+    color: white;
+    margin-left:12px;
+    outline: none;
+    margin-top: 3px;
+    border:1px solid rgb(39, 34, 34);
+
+
+
+
+}
+input::placeholder {
+  color: white;
+  font-style: italic;
+  opacity: 1;
+  font-size: 16px;
+  
+
+
+}
+.tunebuttons{
+    display:flex;
+    justify-content: space-around;
+}
+
+.ptunes{
+    margin-top: 7px;
+    
+}
+.ptunes:hover{
+    font-size: 33px;
+}
+
+button{
+    height:35px;
+    margin:auto;
+    border-radius: 10px;
+    padding:10px;
+}
+.search{
+    height:23px;
+    margin-top: 3px;
+}
+
+
+@media (max-width: 700px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    height:100px;
+  }
+  .middle{
+    width:90vw;
+    margin-bottom: 30px;
+  }
+  input{
+    width:75vw;
+    margin-top:3px;
+  }
+}
+
+button:hover{
+    font-weight: bolder;
+}
+
+

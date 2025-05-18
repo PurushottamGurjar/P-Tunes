@@ -1,0 +1,97 @@
+.wholesidebar{
+    height:550px;
+    width:270px;
+    background-color: rgb(31, 29, 29);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    padding: 12px;
+    background-color: black;
+    margin:5px;
+    border-radius: 12px;
+}
+p{
+    color:white;
+}
+.homeleftbar{
+    display:flex;
+    gap:12px;
+}
+
+.homesearchlogo{
+    height:22px;
+}
+.firsttext{
+    font-size: 18px;
+    color: white;
+
+}
+.rightarrow{
+    height:20px;
+    margin-top: 1px;
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    padding: 12px;
+    background-color: black;
+    margin:5px;
+    border-radius: 12px;
+
+}
+.library{
+    display:flex;
+    justify-content: space-between;
+
+}
+.libraryfirst{
+    display:flex;
+    gap:13px;
+    margin-top:auto;
+}
+.librarysecond{
+    display:flex;
+    gap:10px;
+
+}
+.yourlibrary{
+    margin-top:2px;
+    font-size: 18px;
+}
+
+.createplaylist{
+    height: 120px;
+    width:240px;
+    background-color: rgb(35, 35, 34);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;;
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+
+
+}
+.textheader{
+    color:white;
+    margin-left:12px;
+    margin-top: 12px;
+}
+
+.textpara{
+    margin-left: 12px;
+}
+.playlistbutton{
+    margin-left: 12px;
+    padding-left:15px;
+    border-radius: 20px;
+}
+

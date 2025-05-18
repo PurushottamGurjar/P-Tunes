@@ -1,6 +1,14 @@
 .leftbar{
-  height: 400px;
-  width:200px;
+  height: 550px;
+  width:270px;
   background-color: black;
+} 
+@media (max-width:900px) {
+  .leftbar {
+    display: none;
+  }
 }
 
+.body{
+  display:flex;
+}
