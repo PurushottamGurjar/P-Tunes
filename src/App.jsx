@@ -30,7 +30,7 @@ const App = () => {
 
             <Routes>
               <Route path="/" element={<RightContent />} />
-              <Route path="/top" element={<SongPlaylist />} />
+              <Route path="/album/0" element={<SongPlaylist />} />
               <Route path="/song" element={<SongPlaylist />} />
             </Routes>
           </div>

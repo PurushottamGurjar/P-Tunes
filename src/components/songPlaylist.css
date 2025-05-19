@@ -1,5 +1,157 @@
-.songplaylist{
-    height:70vh;
-    width:100vw;
-    background-color: red;
+.display-album {
+  color: #ffffff;
+  background-color: #121212;
+  margin-left: 20px;
+  width: calc(100vw-290);
+}
+
+.album-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .album-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.album-image {
+  width: 12rem;
+  border-radius: 0.5rem;
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-label {
+  font-size: 0.9rem;
+}
+
+.album-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .album-title {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .display-album {
+    width: 97vw;
+  }
+}
+
+.album-meta {
+  margin-top: 5px;
+  color: #a7a7a7;
+}
+
+.album-meta img.spotify-logo {
+  display: inline-block;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.album-duration {
+  color: #a7a7a7;
+}
+
+.song-grid-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  color: #a7a7a7;
+}
+
+@media (min-width: 640px) {
+  .song-grid-header {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .date-added-header {
+    display: block;
+  }
+}
+
+.date-added-header {
+  display: none;
+}
+
+.clock-icon {
+  margin: auto;
+  width: 1rem;
+}
+
+.song-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
+  align-items: center;
+  color: #a7a7a7;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.song-row:hover {
+  background-color: #ffffff2b;
+}
+
+@media (min-width: 640px) {
+  .song-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .date-added {
+    display: block;
+  }
+}
+
+.date-added {
+  display: none;
+  font-size: 0.95rem;
+}
+
+.song-title {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.song-index {
+  margin-right: 1rem;
+  color: #a7a7a7;
+}
+
+.song-image {
+  width: 2.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.song-details {
+  display: inline-block;
+}
+
+.song-desc {
+  font-size: 0.85rem;
+  color: #a7a7a7;
+}
+
+.album-name,
+.song-duration {
+  font-size: 0.95rem;
+  text-align: center;
 }

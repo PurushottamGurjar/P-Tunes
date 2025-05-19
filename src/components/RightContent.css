@@ -6,9 +6,6 @@
     margin-left: 20px;
     margin-top: 5px;
 }
-.featuredChart{
-    background-color: yellow;
-}
 
 .chartimg{
     height:150px;
@@ -39,7 +36,9 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-
+}
+.albumitems:hover{
+   background-color: rgb(31, 30, 30);
 }
 .albumitemtextname{
     font-size: 16px;

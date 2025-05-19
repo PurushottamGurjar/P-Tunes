@@ -6,7 +6,7 @@ export const AlbumItem = ({image,name,desc,id}) => {
   const navigate=useNavigate();
 
   return (
-    <div  className="albumitems" onClick={()=>{navigate(`/${name}`)}}>
+    <div  className="albumitems" onClick={()=>{navigate(`/album/${id}`)}}>
         <img className="chartimg" src={image} alt="image" />
         <p className="albumitemtextname">{name}</p>
         <p className="albumitemtextdesc">{desc}</p>

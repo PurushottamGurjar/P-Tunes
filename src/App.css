@@ -2,6 +2,7 @@
   height: 550px;
   width:270px;
   background-color: black;
+  margin-left: 2px;
 } 
 @media (max-width:900px) {
   .leftbar {
