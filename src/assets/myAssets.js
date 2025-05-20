@@ -82,42 +82,48 @@ export const albumsData = [
         name: "Top 50 Global",
         image: img8,
         desc:"Your weekly update of the most played tracks",
-        bgColor:"#2a4365"
+        bgColor:"#2a4365",
+        bgLightColor:"#2a4390"
     },
     {   
         id:1,
         name: "Top 50 India",
         image: img9,
         desc:"Your weekly update of the most played tracks",
-        bgColor:"#22543d"
+        bgColor:"#22543d",
+        bgLightColor:"#225500"
     },
     {   
         id:2,
         name: "Trending India",
         image: img10,
         desc:"Your weekly update of the most played tracks",
-        bgColor:"#742a2a"
+        bgColor:"#745a2a",
+        bgLightColor:"#74112a"
     },
     {   
         id:3,
         name: "Trending Global",
         image: img16,
         desc:"Your weekly update of the most played tracks",
-        bgColor:"#44337a"
+        bgColor:"#44337a",
+        bgLightColor:"#443140"
     },
     {   
         id:4,
         name: "Mega Hits,",
         image: img11,
         desc:"Your weekly update of the most played tracks",
-        bgColor:"#234e52"
+        bgColor:"#234e52",
+        bgLightColor:"#234a53"
     },
     {   
         id:5,
         name: "Happy Favorites",
         image: img15,
         desc:"Your weekly update of the most played tracks",
-        bgColor:"#744210"
+        bgColor:"#744210",
+        bgLightColor:"#744120"
     },
 
 
@@ -127,28 +133,32 @@ export const albumsData = [
         name: "Top 50 Global",
         image: img8,
         desc:"Your weekly update of the most played tracks",
-        bgColor:"#2a4365"
+        bgColor:"#2a4365",
+        bgLightColor:"#2a4390"
     },
     {   
         id:1,
         name: "Top 50 India",
         image: img9,
         desc:"Your weekly update of the most played tracks",
-        bgColor:"#22543d"
+        bgColor:"#22543d",
+         bgLightColor:"#225500"
     },
     {   
         id:2,
         name: "Trending India",
         image: img10,
         desc:"Your weekly update of the most played tracks",
-        bgColor:"#742a2a"
+        bgColor:"#742a2a",
+        bglightColor:"#742120"
     },
     {   
         id:3,
         name: "Trending Global",
         image: img16,
         desc:"Your weekly update of the most played tracks",
-        bgColor:"#44337a"
+        bgColor:"#44337a",
+        bgLightColor:"#443140"
     }
 
     

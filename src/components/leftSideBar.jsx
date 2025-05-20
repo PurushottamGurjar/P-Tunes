@@ -3,11 +3,12 @@ import "./LeftSideBar.css"
 import { assets } from '../assets/myAssets'
 
 const LeftSideBar = () => {
+   
   return (
     <>
         <div className="wholesidebar">
             <div className="first">
-                <div className="homeleftbar">
+                <div  className="homeleftbar">
                     <img className="homesearchlogo" src={assets.home_icon} alt="" />
                     <h2 className='firsttext'>Home</h2>
                 </div>
@@ -23,7 +24,7 @@ const LeftSideBar = () => {
                         <p className="yourlibrary">Your Library</p>
                     </div>
                     <div className="librarysecond">
-                        <img className="homesearchlogo" src={assets.plus_icon} alt="" />
+                        <img  className="homesearchlogo" src={assets.plus_icon} alt="" />
                         <img className="rightarrow" src={assets.arrow_icon} alt="" />
                     </div>
 

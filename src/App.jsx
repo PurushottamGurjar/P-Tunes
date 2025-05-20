@@ -6,9 +6,10 @@ import RightContent from "./components/RightContent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SongPlaylist from "./components/SongPlaylist";
 import { useNavigate } from "react-router-dom";
+import Player from "./components/Player";
 
 const App = () => {
-  const navigateHome=useNavigate();
+  const navigateHome = useNavigate();
   return (
     <div>
       <div className="fullcontent">
@@ -23,18 +24,27 @@ const App = () => {
 
           <div className="rightheader">
             <div className="rightContentHeader">
-              <div className="all selected" onClick={()=>navigateHome('/')} >All </div>
-              <div className="all" onClick={()=>navigateHome('/top')}>Music</div>
-              <div className="all" onClick={()=>navigateHome('/top')}>Podcast</div>
+              <div className="all" onClick={() => navigateHome("/")}>
+                All{" "}
+              </div>
+              <div className="all" onClick={() => navigateHome("/album/4")}>
+                Music
+              </div>
+              <div className="all" onClick={() => navigateHome("/album/2")}>
+                Podcast
+              </div>
             </div>
 
             <Routes>
               <Route path="/" element={<RightContent />} />
-              <Route path="/album/0" element={<SongPlaylist />} />
+              <Route path="/album/:id" element={<SongPlaylist />} />
               <Route path="/song" element={<SongPlaylist />} />
+              <Route path="*" element={<RightContent />} />
             </Routes>
           </div>
         </div>
+        <Player />
+        
       </div>
     </div>
   );

@@ -6,13 +6,16 @@ import { albumsData } from "../assets/myAssets";
 import { songsData } from "../assets/myAssets";
 
 const SongPlaylist = () => {
+
   const { id } = useParams();
   const albumData = albumsData[id];
   // const { playWithId } = useContext(PlayerContext);
 
   return (
-    <div className="display-album">
-      <div className="album-header">
+    <div className="display-album" style={
+      {  background: `linear-gradient(to bottom, ${albumData.bgLightColor}, ${albumData.bgColor})`}
+      }>
+      <div className="album-header ml30">
         <img className="album-image" src={albumData.image} alt="" />
         <div className="album-info">
           <p className="playlist-label">Playlist</p>
@@ -28,19 +31,19 @@ const SongPlaylist = () => {
         </div>
       </div>
 
-      <div className="song-grid-header">
+      <div className="song-grid-header ml30">
         <p><b className="song-index-header">#</b>Title</p>
-        <p>Album</p>
+        <div className="paraalbum">Album</div>
         <p className="date-added-header">Date Added</p>
         <img className="clock-icon" src={assets.clock_icon} alt="" />
       </div>
-      <hr />
+      < hr/>
 
       {songsData.map((item, index) => (
-        <div
+        <div 
           onClick={() => playWithId(item.id)}
           key={item.id}
-          className="song-row"
+          className="song-row ml30"
         >
           <div className="song-title">
             <b className="song-index">{index + 1}</b>

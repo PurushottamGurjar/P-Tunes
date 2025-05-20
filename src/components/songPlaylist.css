@@ -1,8 +1,20 @@
 .display-album {
   color: #ffffff;
-  background-color: #121212;
   margin-left: 20px;
-  width: calc(100vw-290);
+  margin-right: 20px;
+  margin-top: 15px;
+  /* width:100vw; */
+  width: calc(100vw - 312px);
+  height:76vh;
+  overflow-y: scroll;
+  border-radius: 10px;
+  box-shadow: -4px -4px 10px gray;
+}
+.display-album::-webkit-scrollbar{
+  display:none;
+}
+.ml30{
+  margin-left: 2vw;
 }
 
 .album-header {
@@ -34,7 +46,7 @@
 }
 
 .album-title {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -46,7 +58,7 @@
 }
 @media (max-width: 900px) {
   .display-album {
-    width: 97vw;
+    width: 95vw;
   }
 }
 
@@ -76,7 +88,7 @@
 
 @media (min-width: 640px) {
   .song-grid-header {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .date-added-header {
@@ -110,12 +122,16 @@
 
 @media (min-width: 640px) {
   .song-row {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .date-added {
     display: block;
   }
+}
+.paraalbum{
+  align-self: center;
+  text-align: center;
 }
 
 .date-added {
@@ -143,6 +159,8 @@
 
 .song-details {
   display: inline-block;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .song-desc {

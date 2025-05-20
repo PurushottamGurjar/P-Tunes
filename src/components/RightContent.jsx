@@ -9,11 +9,6 @@ const RightContent = () => {
   return (
     <>
       <div className="wholeRightContent">
-        {/* <div className="rightContentHeader">
-          <div className="all selected">All</div>
-          <div className="all">Music</div>
-          <div className="all">Podcast</div>
-        </div> */}
         <h1 className="featured">Featured Charts</h1>
         
         <div className="featuredCharts">

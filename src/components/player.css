@@ -1,0 +1,27 @@
+.playercontainer{
+    height:50px;
+    width:100vw;
+    background-color: red;
+    position:fixed;
+    bottom:5px;
+}
+
+.songIconImg{
+  height:40px;
+  margin-left: 10px;
+}
+
+.playercontainer{
+  display: flex;
+}
+.playerFirst{
+  display: flex;
+  gap:7px;
+  color: white;
+  font-size: 18px;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.playerTextFirst{
+  font-size: bold;
+}
