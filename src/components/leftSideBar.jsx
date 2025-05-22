@@ -1,5 +1,5 @@
 import React from 'react'
-import "./LeftSideBar.css"
+import "./leftSideBar.css"
 import { assets } from '../assets/myAssets'
 
 const LeftSideBar = () => {
