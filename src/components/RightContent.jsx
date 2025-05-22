@@ -6,6 +6,7 @@ import { SongItems } from "./SongItems";
 import { songsData } from "../assets/myAssets";
 
 const RightContent = () => {
+  
   return (
     <>
       <div className="wholeRightContent">

@@ -8,9 +8,14 @@ import SongPlaylist from "./components/SongPlaylist";
 import { useNavigate } from "react-router-dom";
 import Player from "./components/Player";
 import MyFavorite from "./components/MyFavorite";
+import { useContext } from "react";
+import { MyContext } from "./contexts/ContextPlayer";
+
+
 
 const App = () => {
   const navigateHome = useNavigate();
+  const {category,setCategory}=useContext(MyContext);
   return (
     <div>
       <div className="fullcontent">
@@ -25,17 +30,32 @@ const App = () => {
 
           <div className="rightheader">
             <div className="rightContentHeader">
-              <div className="all" onClick={() => navigateHome("/album/0")}>
-                Favorites
-              </div>
 
-              <div className="all" onClick={() => navigateHome("/")}>
+              <div className={`all ${category==="All"? "selected" : "nothing"}`} onClick={() => {
+                setCategory("All")
+                navigateHome('/')
+
+              }}>
                 All
               </div>
-              <div className="all" onClick={() => navigateHome("/album/4")}>
+               <div className={`all ${category==="Favorites"? "selected": "nothing"}`} 
+               onClick={()=>{
+                setCategory("Favorites")
+                navigateHome('/album/2')
+               }}>
+                Favorites
+              </div>
+              <div className={`all ${category==="Music"?"selected":"nothing"}`} 
+              onClick={()=>{
+                setCategory("Music")
+                navigateHome('album/4')
+              }}>
                 Music
               </div>
-              <div className="all" onClick={() => navigateHome("/album/2")}>
+              <div className={`all ${category==="Podcast"? "selected" : "nothing"}`} onClick={() => {
+                setCategory("Podcast")
+                navigateHome("/album/2")
+              }}>
                 Podcast
               </div>
             </div>

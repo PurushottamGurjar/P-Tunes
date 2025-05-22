@@ -7,6 +7,7 @@ export const MyContext = createContext();
 const ContextPlayer = ({ children }) => {
   const audioRef = useRef();
   const [seekValue, setSeekValue] = useState(0);
+  const [category, setCategory]=useState("All")
   const [songTrack, setSongTrack] = useState(songsData[2]);
   const [isPlaying, setIsPlaying] = useState(false);
   const [time, setTime] = useState({
@@ -109,6 +110,8 @@ const ContextPlayer = ({ children }) => {
     setSeekValue,
     handleSeekUpdate,
     play,
+    category,
+    setCategory,
     pause,
     prev,
     next,

@@ -5,11 +5,12 @@ import { MyContext } from '../contexts/ContextPlayer'
 import { albumsData } from '../assets/myAssets'
 import { favoriteSongsData } from '../assets/myAssets'
 
+
 const MyFavorite = () => {
     const {playWithId}=useContext(MyContext)
   return (
     <>
-     {songsData.map((item, index) => (
+     {favoriteSongsData.map((item, index) => (
             <div 
               onClick={() => playWithId(item.id)}
               key={item.id}
@@ -23,7 +24,7 @@ const MyFavorite = () => {
                   <div className="song-desc">{item.desc.slice(0, 20)}</div>
                 </div>
               </div>
-              <p className="album-name">{albumData.name}</p>
+              <p className="album-name">{albumsData.name}</p>
               <p className="date-added">2 days ago</p>
               <p className="song-duration">{item.duration}</p>
             </div>

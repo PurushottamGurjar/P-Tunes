@@ -164,6 +164,15 @@ export const albumsData = [
   },
   {
     id: 9,
+    name: "Favorite",
+    image: PtuneLogo,
+    desc: "You love to listen",
+    bgColor: "#22543d",
+    bgLightColor: "#33893e",
+  },
+
+  {
+    id: 10,
     name: "Trending India",
     image: img10,
     desc: "Your weekly update of the most played tracks",
@@ -171,20 +180,12 @@ export const albumsData = [
     bglightColor: "#742120",
   },
   {
-    id: 10,
+    id: 11,
     name: "Trending Global",
     image: img16,
     desc: "Your weekly update of the most played tracks",
     bgColor: "#44337a",
     bgLightColor: "#443140",
-  },
-  {
-    id: 11,
-    name: "My Favorites",
-    image: PtuneLogo,
-    desc: "You Love to Listen",
-    bgColor: "#2a4365",
-    bgLightColor: "#2a4390",
   },
 ];
 
@@ -208,7 +209,7 @@ export const favoriteSongsData = [
   },
   {
     id: 2,
-    name: "Surbhee Reverbed",
+    name: "Surbhi Reverbed",
     image: PtuneLogo,
     file: Surbhi,
     desc: "Favorite",
@@ -224,7 +225,7 @@ export const favoriteSongsData = [
   },
   {
     id: 4,
-    name: "KaiseBataiye",
+    name: "Kaise Bataiye",
     image: PtuneLogo,
     file: KaiseBataiye,
     desc: "Favorite",
@@ -240,7 +241,7 @@ export const favoriteSongsData = [
   },
   {
     id: 6,
-    name: "OJana",
+    name: "O Jaana",
     image: PtuneLogo,
     file: OJana,
     desc: "Favorite",
@@ -248,7 +249,7 @@ export const favoriteSongsData = [
   },
   {
     id: 7,
-    name: "Sachiyaari",
+    name: "Sachi yaari",
     image: PtuneLogo,
     file: SachiYaari,
     desc: "Favorite",
@@ -256,7 +257,7 @@ export const favoriteSongsData = [
   },
   {
     id: 8,
-    name: "DilIbadat",
+    name: "Dil Ibadat",
     image: PtuneLogo,
     file: DilIbadat,
     desc: "Favorite",
@@ -264,20 +265,21 @@ export const favoriteSongsData = [
   },
   {
     id: 9,
-    name: "MyQueen",
+    name: "My Queen",
     image: PtuneLogo,
     file: MyQueen,
     desc: "Favorite",
     duration: "3:17",
   },
   {
-    id: 10,
-    name: "OJana",
+    id: 9,
+    name: "My Queen",
     image: PtuneLogo,
-    file: OJana,
+    file: MyQueen,
     desc: "Favorite",
-    duration: "4:17",
-  },
+    duration: "3:17",
+  }
+  
 ];
 
 export const songsData = [
@@ -299,7 +301,7 @@ export const songsData = [
   },
   {
     id: 2,
-    name: "Surbhee Reverbed",
+    name: "Surbhi Reverbed",
     image: PtuneLogo,
     file: Surbhi,
     desc: "Favorite",
@@ -462,19 +464,11 @@ export const randomSongsData = [
   },
   {
     id: 2,
-    name: "Surbhee Reverbed",
+    name: "Surbhi Reverbed",
     image: PtuneLogo,
     file: Surbhi,
     desc: "Favorite",
     duration: "5:00",
-  },
-  {
-    id: 10,
-    name: "Kutti Story",
-    image: img1,
-    file: song1,
-    desc: "Aniruth Ravichander,Thalapathy Vijay",
-    duration: "5:22",
   },
   {
     id: 3,
@@ -508,7 +502,7 @@ export const randomSongsData = [
     desc: "Favorite",
     duration: "5:00",
   },
-
+  
   {
     id: 8,
     name: "DilIbadat",
@@ -524,6 +518,14 @@ export const randomSongsData = [
     file: MyQueen,
     desc: "Favorite",
     duration: "5:00",
+  },
+  {
+    id: 10,
+    name: "Kutti Story",
+    image: img1,
+    file: song1,
+    desc: "Aniruth Ravichander,Thalapathy Vijay",
+    duration: "5:22",
   },
 
   {
