@@ -15,7 +15,7 @@ const HeaderLogoBar = () => {
           </div>
           <div className="profielSearch">
             <div className="middle">
-            <input type="text" placeholder='Search Artist " Purush Gurjar "' className='inputSearchBar'/>
+            <input type="text" placeholder='Search Artist " Purushottam Gurjar "' className='inputSearchBar'/>
             <img className="search" src={assets.search_icon} alt="" />
             </div>
             <div className="profileIcon">
@@ -24,7 +24,7 @@ const HeaderLogoBar = () => {
           </div>
           </div>
           <div className="middlesecondary">
-            <input type="text" placeholder='Search " Purush Gurjar "' className='inputSearchBar'/>
+            <input type="text" placeholder='Search " Purushottam Gurjar "' className='inputSearchBar'/>
             <img className="search" src={assets.search_icon} alt="" />
           </div>
           

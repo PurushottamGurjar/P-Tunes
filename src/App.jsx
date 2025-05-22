@@ -41,22 +41,22 @@ const App = () => {
                <div className={`all ${category==="Favorites"? "selected": "nothing"}`} 
                onClick={()=>{
                 setCategory("Favorites")
-                navigateHome('/album/2')
+                navigateHome('/album/8')
                }}>
                 Favorites
               </div>
               <div className={`all ${category==="Music"?"selected":"nothing"}`} 
               onClick={()=>{
                 setCategory("Music")
-                navigateHome('album/4')
+                navigateHome('/favorites')
               }}>
                 Music
               </div>
-              <div className={`all ${category==="Podcast"? "selected" : "nothing"}`} onClick={() => {
-                setCategory("Podcast")
+              <div className={`all ${category==="Playlist"? "selected" : "nothing"}`} onClick={() => {
+                setCategory("Playlist")
                 navigateHome("/album/2")
               }}>
-                Podcast
+                PlayList
               </div>
             </div>
 

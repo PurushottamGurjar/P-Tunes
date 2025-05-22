@@ -439,7 +439,7 @@ export const randomSongsData = [
     duration: "5:00",
   },
   {
-    id: 0,
+    id: 3,
     name: "Bewafa",
     image: PtuneLogo,
     file: Bewafa,
@@ -471,7 +471,7 @@ export const randomSongsData = [
     duration: "5:00",
   },
   {
-    id: 3,
+    id: 0,
     name: "Kaffara",
     image: PtuneLogo,
     file: Kaffara,

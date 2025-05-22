@@ -4,7 +4,8 @@
     height:50px;
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgb(77, 40, 73) 0%, rgb(6, 15, 10) 50%, rgb(100, 97, 61) 100%);    
 
 }
 .logoImg{
@@ -29,7 +30,9 @@
     font-size: 33px;
     margin-top: 8px;
     font-weight: bold;
-    color:black;
+    background: linear-gradient(to right, #f7fb0f, #f2da02);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }   
 
 .middle{

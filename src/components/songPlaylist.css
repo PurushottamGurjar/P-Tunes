@@ -58,7 +58,8 @@
 }
 @media (max-width: 900px) {
   .display-album {
-    width: calc(100vw - 40px);
+    width: calc(100vw - 30px);
+    margin-left: 15px;
   }
   
 }

@@ -4,13 +4,15 @@ import { useContext } from 'react'
 import { MyContext } from '../contexts/ContextPlayer'
 import { albumsData } from '../assets/myAssets'
 import { favoriteSongsData } from '../assets/myAssets'
+import "./MyFavorite.css"
 
 
 const MyFavorite = () => {
     const {playWithId}=useContext(MyContext)
   return (
     <>
-     {favoriteSongsData.map((item, index) => (
+     <div className="fav">
+      {favoriteSongsData.map((item, index) => (
             <div 
               onClick={() => playWithId(item.id)}
               key={item.id}
@@ -29,6 +31,7 @@ const MyFavorite = () => {
               <p className="song-duration">{item.duration}</p>
             </div>
           ))}
+     </div>
       
     </>
   )

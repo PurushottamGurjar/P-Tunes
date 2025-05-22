@@ -1,0 +1,25 @@
+.fav{
+    color: #ffffff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  width: calc(100vw - 312px);
+  height:74vh;
+  overflow-y: scroll;
+  border-radius: 10px;
+  box-sizing: content-box;
+  background: #020024;
+background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(6, 68, 160, 1) 0%, rgba(5, 97, 179, 1) 20%, rgba(2, 159, 220, 1) 64%, rgba(0, 212, 255, 1) 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fav::-webkit-scrollbar{
+    display:none;
+}
+
+@media (max-width: 900px) {
+  .fav{
+    width: calc(100vw - 30px);
+    margin-left: 15px;
+  }
+  
+}
