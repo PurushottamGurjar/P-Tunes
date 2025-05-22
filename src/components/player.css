@@ -1,10 +1,11 @@
 .playercontainer {
   height: 60px;
   width: 100vw;
-  background-color: rgb(18, 18, 18);
+  background-color: #186ceb;
   position: fixed;
   bottom: 0;
   display: flex;
+  margin-top: 6px;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -21,7 +22,7 @@
   gap: 10px;
   color: white;
   font-size: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .playerTextFirst {
@@ -84,8 +85,13 @@
   height: 16px;
   cursor: pointer;
 }
-.seek{
-  width:500px;
+.seek {
+  width: 500px;
+}
+@media(min-width:900px){
+  .curentSongName{
+    display:none;
+  }
 }
 /* ✅ Responsive Design: Tablet and Mobile */
 @media (max-width: 900px) {
@@ -105,6 +111,17 @@
 
   .playerSecondIcons {
     gap: 20px;
+  }
+  .playercontainer{
+    border-radius: 200px;
+    width:96vw;
+  }
+  .playerSecondSeekBar{
+    display:flex;
+  }
+  .secondPlayerSeekbarAndName{
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -158,7 +175,7 @@
   }
 
   .seek {
-    width: 100%;
+    width: 90%;
   }
 
   .playerCurrentTime,
@@ -168,5 +185,10 @@
 }
 
 
-
-  
+.curentSongName{
+  font-size: 18px;
+  padding-top: 3px;
+  font-weight: bold;
+  color: rgb(114, 186, 54);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

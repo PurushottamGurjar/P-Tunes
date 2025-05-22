@@ -8,8 +8,8 @@ export const AlbumItem = ({image,name,desc,id}) => {
   return (
     <div  className="albumitems" onClick={()=>{navigate(`/album/${id}`)}}>
         <img className="chartimg" src={image} alt="image" />
-        <p className="albumitemtextname">{name}</p>
-        <p className="albumitemtextdesc">{desc}</p>
+        <p className="albumitemtextname">{name.slice(0,20)}</p>
+        <p className="albumitemtextdesc">{desc.slice(0,20)}</p>
     </div>
   )
 };

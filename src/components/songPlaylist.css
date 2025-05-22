@@ -2,13 +2,13 @@
   color: #ffffff;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 15px;
-  /* width:100vw; */
+  margin-top: 10px;
   width: calc(100vw - 312px);
-  height:76vh;
+  height:74vh;
   overflow-y: scroll;
   border-radius: 10px;
-  box-shadow: -4px -4px 10px gray;
+  box-sizing: content-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .display-album::-webkit-scrollbar{
   display:none;
@@ -32,7 +32,7 @@
 }
 
 .album-image {
-  width: 12rem;
+  width: 10rem;
   border-radius: 0.5rem;
 }
 
@@ -58,8 +58,9 @@
 }
 @media (max-width: 900px) {
   .display-album {
-    width: 95vw;
+    width: calc(100vw - 40px);
   }
+  
 }
 
 .album-meta {

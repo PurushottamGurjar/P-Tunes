@@ -6,6 +6,7 @@
     margin-top: 12px;
     overflow-y: scroll;
     border-radius: 10px;
+    box-sizing: content-box;
 
 }
 .wholeRightContent::-webkit-scrollbar{
@@ -64,4 +65,15 @@
     margin: 6px;
     font-size: 14px;
      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media(max-width: 900px){
+    .chartimg{
+        height:100px;
+    }
+    .albumitemtextname{
+        font-size:12px;
+    }
+    .albumitemtextdesc{
+        font-size:12px;
+    }
 }

@@ -6,18 +6,25 @@ const HeaderLogoBar = () => {
   return (
     <>
         <div className="header">
-          <div className="tunebuttons">
-            <div className="left">
-            <img src={assets.spotify_logo} alt="Ptunes" />
-            <h1 className='ptunes'>P-Tunes </h1>
+          <div className="headerSecondary">
+            <div className="logoTune">
+            <div className="imglogo">
+              <img className='logoImg'  src={assets.PtuneLogo} alt="" />
+            </div>
+            <div className="Ptunetext"> P-Tunes</div>
           </div>
-          <div className="right">
-            <button>Install App</button>
-            <button>Login</button>
+          <div className="profielSearch">
+            <div className="middle">
+            <input type="text" placeholder='Search Artist " Purush Gurjar "' className='inputSearchBar'/>
+            <img className="search" src={assets.search_icon} alt="" />
+            </div>
+            <div className="profileIcon">
+              <img src={assets.profilePic} alt="" className="profileimg" />
+            </div>
           </div>
           </div>
-          <div className="middle">
-            <input type="text" placeholder='Search Your song' />
+          <div className="middlesecondary">
+            <input type="text" placeholder='Search " Purush Gurjar "' className='inputSearchBar'/>
             <img className="search" src={assets.search_icon} alt="" />
           </div>
           

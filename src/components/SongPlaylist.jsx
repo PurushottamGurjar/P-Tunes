@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./songPlaylist.css";
 import { useParams } from "react-router-dom";
 import { assets } from "../assets/myAssets";
 import { albumsData } from "../assets/myAssets";
 import { songsData } from "../assets/myAssets";
+import  { MyContext } from "../contexts/ContextPlayer";
 
 const SongPlaylist = () => {
+  const {playWithId}=useContext(MyContext);
 
   const { id } = useParams();
   const albumData = albumsData[id];
-  // const { playWithId } = useContext(PlayerContext);
+  
 
   return (
     <div className="display-album" style={
@@ -22,8 +24,8 @@ const SongPlaylist = () => {
           <h2 className="album-title">{albumData.name}</h2>
           <h4 className="album-desc">{albumData.desc}</h4>
           <p className="album-meta">
-            <img className="spotify-logo" src={assets.spotify_logo} alt="" />
-            <b> Spotify </b>
+            <img className="spotify-logo" src={assets.PtuneLogo} alt="" />
+            <b> P-Tunes </b>
             <b>• 1,232,123 saves </b>
             • <b>50 songs,</b>
             <span className="album-duration"> about 2hr 30 min</span>

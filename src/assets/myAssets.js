@@ -44,10 +44,13 @@ import spotify_logo from './spotify_logo.png'
 import stack_icon from './stack.png'
 import volume_icon from './volume.png'
 import zoom_icon from './zoom.png'
+import PtuneLogo from './PtuneLogo.png'
+import profilePic from './profilePic.jpg'
 
 
 export const assets={
-
+    PtuneLogo,
+    profilePic,
     arrow_icon,
     bell_icon,
     clock_icon,
@@ -125,10 +128,7 @@ export const albumsData = [
         bgColor:"#744210",
         bgLightColor:"#744120"
     },
-
-
-
-     {   
+    {   
         id:0,
         name: "Top 50 Global",
         image: img8,

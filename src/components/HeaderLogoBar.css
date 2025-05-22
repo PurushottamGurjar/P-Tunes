@@ -1,108 +1,107 @@
-.header{
-    height:50px;
-    width:100vw;
-    background: #050505;
-    color :white;
-    display: flex;
-    justify-content: space-between; 
-    gap:12px;
-
-
-
-
-}
-.left{
+.headerSecondary{
     display:flex;
-    gap:20px;
+    padding:0px;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
 
-    width: 250px;
-    flex-shrink: 1;
 }
+.logoImg{
+    height: 50px;
+}
+.logoTune{
+    display: flex;
+    gap:15px;
+    min-width: 240px;
+    width:20vw;
+    box-sizing: border-box;
+    padding-left: 20px;
+    justify-content: space-around;
+}
+.profielSearch{
+    display: flex;
+    justify-content: space-between;
+    width:60vw;
+}
+
+.Ptunetext{
+    font-size: 33px;
+    margin-top: 8px;
+    font-weight: bold;
+    color:black;
+}   
+
 .middle{
     background: rgb(39, 34, 34);
     border-radius: 20px;
     display:flex;
     gap:12px;
     width:45vw;
-    height:30px;
+    height:35px;
     margin:auto;
+    margin-top: 4px;
     justify-content: space-around;
     border: 3px solid white;
     flex-shrink: 2;
 }
 
-.right{
+.middlesecondary{
+    background: rgb(39, 34, 34);
+    border-radius: 20px;
     display:flex;
-    flex-shrink: 1;
-    gap:10px;
+    gap:12px;
+    width:93vw;
+    height:40px;
+    margin:auto;
+    margin-top: 4px;
+    justify-content: space-around;
+    border: 3px solid white;
+    flex-shrink: 2;
 }
-input{
+@media(min-width:900px){
+    .middlesecondary{
+        display:none;
+    }
+}
+.inputSearchBar{
     background-color:rgb(39, 34, 34);
     font-size: 16px;
-    height:23px;
-    width: 25vw;
-    color: white;
+    height:28px;
+    width: 40vw;
+    color:white;
     margin-left:12px;
     outline: none;
-    margin-top: 3px;
+    margin-top: 4px;
     border:1px solid rgb(39, 34, 34);
-
-
-
-
 }
-input::placeholder {
-  color: white;
-  font-style: italic;
+.inputSearchBar::placeholder {
+  color: rgb(166, 158, 158);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   opacity: 1;
-  font-size: 16px;
-  
-
-
-}
-.tunebuttons{
-    display:flex;
-    justify-content: space-around;
-}
-
-.ptunes{
-    margin-top: 7px;
-    
-}
-.ptunes:hover{
-    font-size: 33px;
-}
-
-button{
-    height:35px;
-    margin:auto;
-    border-radius: 10px;
-    padding:10px;
+  font-size: 20px;
 }
 .search{
     height:23px;
-    margin-top: 3px;
+    margin-top:6px;
+}
+.profileimg{
+    height:40px;
+    width:40px;
+    border-radius: 40px;
+    margin-top: 4px;
+    margin-right: 10px;
+    position:fixed;
+    right:5px;
+    
 }
 
-
-@media (max-width: 700px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    height:100px;
-  }
-  .middle{
-    width:90vw;
-    margin-bottom: 30px;
-  }
-  input{
-    width:75vw;
-    margin-top:3px;
-  }
+@media(max-width:900px){
+    .middle{
+        display:none;
+    }
+    .inputSearchBar{
+        width:70vw;
+        margin-top: 8px;
+    }
 }
-
-button:hover{
-    font-weight: bolder;
-}
-
-

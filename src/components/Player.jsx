@@ -1,40 +1,98 @@
 import React from "react";
 import "./player.css";
 import { assets } from "../assets/myAssets";
-import { useState } from "react";
-import { songsData } from "../assets/myAssets";
+import { useContext } from "react";
+import { MyContext } from "../contexts/ContextPlayer";
+import { useRef } from "react";
 
 const Player = () => {
- const [seekValue, setSeekValue]=useState();
+  const {
+    isPlaying,
+    setIsPlaying,
+    seekValue,
+    setSeekValue,
+    handleSeekUpdate,
+    songTrack,
+    setSongTrack,
+    audioRef,
+    play,
+    pause,
+    prev,
+    next,
+    playWithId,
+    time,
+    setTime,
+  } = useContext(MyContext);
 
- const handleSeekUpdate=(event)=>{
-    setSeekValue(event.target.value)
- }
-
-  const songdata = songsData[0];
   return (
     <>
       <div className="playercontainer">
         <div className="playerFirst">
-          <img src={songdata.image} alt="" className="songIconImg" />
+          <img src={songTrack.image} alt="" className="songIconImg" />
           <div className="playerText">
-            <div className="playerTextFirst">{songdata.name}</div>
-            <div className="playerTextSecond">{songdata.desc.slice(0, 20)}</div>
+            <div className="playerTextFirst">{songTrack.name.slice(0, 30)}</div>
+            <div className="playerTextSecond">
+              {songTrack.desc.slice(0, 30)}
+            </div>
           </div>
         </div>
         <div className="playerSecond">
           <div className="playerSecondIcons">
             <img src={assets.shuffle_icon} alt="" className="playerIcons" />
-            <img src={assets.prev_icon} alt="" className="playerIcons" />
-            <img src={assets.pause_icon} alt="" className="playerIcons" />
-            <img src={assets.next_icon} alt="" className="playerIcons" />
+            <img
+              src={assets.prev_icon}
+              alt=""
+              className="playerIcons"
+              onClick={prev}
+            />
+
+            {isPlaying ? (
+              <img
+                src={assets.pause_icon}
+                alt=""
+                className="playerIcons"
+                onClick={pause}
+              />
+            ) : (
+              <img
+                src={assets.play_icon}
+                alt=""
+                className="playerIcons"
+                onClick={play}
+              />
+            )}
+
+            <img
+              src={assets.next_icon}
+              alt=""
+              className="playerIcons"
+              onClick={next}
+            />
             <img src={assets.loop_icon} alt="" className="playerIcons" />
           </div>
           <div className="playerSecondSeekBar">
-            <div className="playerCurrentTime">1:30</div>
-            <input type="range" className="seek" min="0" max="100" value={seekValue}  onChange={handleSeekUpdate}/>
-            <div className="playerTotalTime">5:50</div>
+            <div className="playerCurrentTime">
+              {time.currentTime.minutes}:
+              {time.currentTime.seconds.toString().padStart(2, "0")}
+            </div>
+
+            <input
+              type="range"
+              className="seek"
+              min="0"
+              max="100"
+              value={seekValue}
+              onChange={handleSeekUpdate}
+            />
+
+            <div className="playerTotalTime">
+              {time.totalTime.minutes}:
+              {time.totalTime.seconds.toString().padStart(2, "0")}
+            </div>
+
+            <audio ref={audioRef} src={songTrack.file}></audio>
           </div>
+          <div className="curentSongName">{songTrack.name.slice(0,20)}</div>
         </div>
         <div className="playerThird">
           <div className="thirdIcons">

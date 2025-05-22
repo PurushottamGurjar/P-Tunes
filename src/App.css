@@ -9,6 +9,9 @@
   .leftbar {
     display: none;
   }
+  .rightContentHeader{
+    width:94vw;
+  }
 }
 
 .body{
@@ -32,6 +35,8 @@
 .rightheader{
   display:flex;
   flex-direction: column;
+  width:95vw;
+  box-sizing: border-box;
   padding-top: 2px;
 }
 

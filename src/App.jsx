@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SongPlaylist from "./components/SongPlaylist";
 import { useNavigate } from "react-router-dom";
 import Player from "./components/Player";
+import MyFavorite from "./components/MyFavorite";
 
 const App = () => {
   const navigateHome = useNavigate();
@@ -24,8 +25,12 @@ const App = () => {
 
           <div className="rightheader">
             <div className="rightContentHeader">
+              <div className="all" onClick={() => navigateHome("/album/0")}>
+                Favorites
+              </div>
+
               <div className="all" onClick={() => navigateHome("/")}>
-                All{" "}
+                All
               </div>
               <div className="all" onClick={() => navigateHome("/album/4")}>
                 Music
@@ -38,6 +43,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<RightContent />} />
               <Route path="/album/:id" element={<SongPlaylist />} />
+              <Route path="/favorites" element={<MyFavorite/>}/>
               <Route path="/song" element={<SongPlaylist />} />
               <Route path="*" element={<RightContent />} />
             </Routes>
