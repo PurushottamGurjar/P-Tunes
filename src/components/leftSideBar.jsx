@@ -35,9 +35,9 @@ const LeftSideBar = () => {
                     <button className='playlistbutton'>Create Playlist</button>
                 </div>
                 <div className="createplaylist">
-                    <h4  className='textheader'>Lets find some podcast to follow</h4>
+                    <h4  className='textheader'>Lets find some podcast </h4>
                     <p className='textpara'>Keep updated on new podcast</p>
-                    <button className='playlistbutton'>Browse podcast6</button>
+                    <button className='playlistbutton'>Browse podcast</button>
                 </div>
             </div>
             <div className="third"></div>

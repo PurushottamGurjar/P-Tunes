@@ -1,12 +1,13 @@
 .wholesidebar{
-    height:82vh;
+    height:79vh;
     width:270px;
-    background-color: rgb(31, 29, 29);
+    background-color: rgb(38, 124, 189);
     margin-top: 10px;
     cursor: pointer;
     display: flex;
     border-radius: 10px;
     flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 .first{
@@ -96,5 +97,12 @@ p{
     margin-left: 12px;
     padding-left:15px;
     border-radius: 20px;
+}
+button{
+    padding:10px;
+    font-size: 16px;
+}
+button:hover{
+    font-weight: bold;
 }
 

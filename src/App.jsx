@@ -1,5 +1,5 @@
 import React from "react";
-import "./app.css";
+import "./App.css";
 import HeaderLogoBar from "./components/HeaderLogoBar";
 import LeftSideBar from "./components/leftSideBar";
 import RightContent from "./components/RightContent";
