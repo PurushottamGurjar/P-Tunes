@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./songPlaylist.css";
 import { useParams } from "react-router-dom";
-import { assets } from "../assets/myAssets";
+import { assets, favoriteSongsData } from "../assets/myAssets";
 import { albumsData } from "../assets/myAssets";
 import { songsData } from "../assets/myAssets";
 import  { MyContext } from "../contexts/ContextPlayer";

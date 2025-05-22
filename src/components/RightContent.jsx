@@ -1,6 +1,6 @@
 import React from "react";
 import "./RightContent.css";
-import { albumsData } from "../assets/myAssets";
+import { albumsData, favoriteSongsData, randomSongsData } from "../assets/myAssets";
 import { AlbumItem } from "./AlbumItem";
 import { SongItems } from "./SongItems";
 import { songsData } from "../assets/myAssets";
@@ -11,7 +11,7 @@ const RightContent = () => {
       <div className="wholeRightContent">
         <h1 className="featured">My Favorites</h1>
         <div className="featuredCharts">
-          {songsData.map((item, index) => (
+          {favoriteSongsData.map((item, index) => (
             <SongItems
               key={index}
               name={item.name}
@@ -35,9 +35,9 @@ const RightContent = () => {
           ))}
         </div>
 
-        <h1 className="featured">Todays Biggest hits</h1>
+        <h1 className="featured">Random Songs</h1>
         <div className="featuredCharts">
-          {songsData.map((item, index) => (
+          {randomSongsData.map((item, index) => (
             <SongItems
               key={index}
               name={item.name}

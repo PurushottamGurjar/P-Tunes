@@ -3,10 +3,10 @@ import { songsData } from '../assets/myAssets'
 import { useContext } from 'react'
 import { MyContext } from '../contexts/ContextPlayer'
 import { albumsData } from '../assets/myAssets'
+import { favoriteSongsData } from '../assets/myAssets'
 
 const MyFavorite = () => {
     const {playWithId}=useContext(MyContext)
-    const albumData=albumsData[0];
   return (
     <>
      {songsData.map((item, index) => (

@@ -48,7 +48,30 @@ import PtuneLogo from './PtuneLogo.png'
 import profilePic from './profilePic.jpg'
 
 
+import Bewafa from './Bewafa.mp3'
+import IllegalHathiyar from './IllegalHathiyar.mp3'
+import Surbhi from './Surbhi.mp3'
+import Kaffara from './Kaffara.mp3'
+import KaiseBataiye from './KaiseBataiye.mp3'
+import Khatola from './Khatola.mp3'
+import OJana from './OJana.mp3'
+import SachiYaari from './SachiYaari.mp3'
+import DilIbadat from './DilIbadat.mp3'
+import MyQueen from './MyQueen.mp3'
+
+
+
 export const assets={
+    Bewafa,
+    IllegalHathiyar,
+    Kaffara,
+    Surbhi,
+    KaiseBataiye,
+    Khatola,
+    OJana,
+    SachiYaari,
+    DilIbadat,
+    MyQueen,
     PtuneLogo,
     profilePic,
     arrow_icon,
@@ -80,8 +103,9 @@ export const assets={
 }
 
 export const albumsData = [
+    
     {   
-        id:0,
+        id:1,
         name: "Top 50 Global",
         image: img8,
         desc:"Your weekly update of the most played tracks",
@@ -89,7 +113,7 @@ export const albumsData = [
         bgLightColor:"#2a4390"
     },
     {   
-        id:1,
+        id:2,
         name: "Top 50 India",
         image: img9,
         desc:"Your weekly update of the most played tracks",
@@ -97,7 +121,7 @@ export const albumsData = [
         bgLightColor:"#225500"
     },
     {   
-        id:2,
+        id:3,
         name: "Trending India",
         image: img10,
         desc:"Your weekly update of the most played tracks",
@@ -105,7 +129,7 @@ export const albumsData = [
         bgLightColor:"#74112a"
     },
     {   
-        id:3,
+        id:4,
         name: "Trending Global",
         image: img16,
         desc:"Your weekly update of the most played tracks",
@@ -113,7 +137,7 @@ export const albumsData = [
         bgLightColor:"#443140"
     },
     {   
-        id:4,
+        id:5,
         name: "Mega Hits,",
         image: img11,
         desc:"Your weekly update of the most played tracks",
@@ -121,7 +145,7 @@ export const albumsData = [
         bgLightColor:"#234a53"
     },
     {   
-        id:5,
+        id:6,
         name: "Happy Favorites",
         image: img15,
         desc:"Your weekly update of the most played tracks",
@@ -129,7 +153,7 @@ export const albumsData = [
         bgLightColor:"#744120"
     },
     {   
-        id:0,
+        id:7,
         name: "Top 50 Global",
         image: img8,
         desc:"Your weekly update of the most played tracks",
@@ -137,7 +161,7 @@ export const albumsData = [
         bgLightColor:"#2a4390"
     },
     {   
-        id:1,
+        id:8,
         name: "Top 50 India",
         image: img9,
         desc:"Your weekly update of the most played tracks",
@@ -145,7 +169,7 @@ export const albumsData = [
          bgLightColor:"#225500"
     },
     {   
-        id:2,
+        id:9,
         name: "Trending India",
         image: img10,
         desc:"Your weekly update of the most played tracks",
@@ -153,20 +177,202 @@ export const albumsData = [
         bglightColor:"#742120"
     },
     {   
-        id:3,
+        id:10,
         name: "Trending Global",
         image: img16,
         desc:"Your weekly update of the most played tracks",
         bgColor:"#44337a",
         bgLightColor:"#443140"
+    },
+    {   
+        id:11,
+        name: "My FAvorites",
+        image: PtuneLogo,
+        desc:"You Love to Listen",
+        bgColor:"#2a4365",
+        bgLightColor:"#2a4390"
     }
 
     
 ]
 
-export const songsData = [
+export const favoriteSongsData = [
     {
         id:0,
+        name: "Kaffara",
+        image: PtuneLogo,
+        file:Bewafa,
+        desc:"Favorite",
+        duration:"8:50"
+    },
+    {
+        id:1,
+        name: "IllegalHathiyar",
+        image: PtuneLogo,
+        file:IllegalHathiyar,
+        desc:" Favorite",
+        duration:"4:40"
+    },
+    {
+        id:2,
+        name: "Surbhee Reverbed",
+        image: PtuneLogo,
+        file:Surbhi,
+        desc:"Favorite",
+        duration:"2:26"
+    },
+    
+    
+    {
+        id:3,
+        name: "Bewafa",
+        image:PtuneLogo,
+        file:Kaffara,
+        desc:"Favorite",
+        duration:"4:40"
+    },
+    {
+        id:4,
+        name: "KaiseBataiye",
+        image: PtuneLogo,
+        file:KaiseBataiye,
+        desc:"Favorite",
+        duration:"4:00"
+    },
+    {
+        id:5,
+        name: "Khatola",
+        image: PtuneLogo,
+        file:Khatola,
+        desc:"Favorite",
+        duration:"3:05"
+    },
+    {
+        id:6,
+        name: "OJana",
+        image: PtuneLogo,
+        file:OJana,
+        desc:"Favorite",
+        duration:"4:17"
+    },
+    {
+        id:7,
+        name: "Sachiyaari",
+        image:PtuneLogo,
+        file:SachiYaari,
+        desc:"Favorite",
+        duration:"3:15"
+    },
+    {
+        id:8,
+        name: "DilIbadat",
+        image: PtuneLogo,
+        file:DilIbadat,
+        desc:"Favorite",
+        duration:"5:22"
+    },
+    {
+        id:9,
+        name: "MyQueen",
+        image: PtuneLogo,
+        file:MyQueen,
+        desc:"Favorite",
+        duration:"3:17"
+    },
+     {
+        id:10,
+        name: "OJana",
+        image: PtuneLogo,
+        file:OJana,
+        desc:"Favorite",
+        duration:"4:17"
+    },
+    
+]
+
+export const songsData = [
+    {
+        id:3,
+        name: "Bewafa",
+        image: PtuneLogo,
+        file:Bewafa,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:1,
+        name: "IllegalHathiyar",
+        image: PtuneLogo,
+        file:IllegalHathiyar,
+        desc:" Favorite",
+        duration:"5:00"
+    },
+    {
+        id:2,
+        name: "Surbhee Reverbed",
+        image: PtuneLogo,
+        file:Surbhi,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:0,
+        name: "Kaffara",
+        image:PtuneLogo,
+        file:Kaffara,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:4,
+        name: "KaiseBataiye",
+        image: PtuneLogo,
+        file:KaiseBataiye,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:5,
+        name: "Khatola",
+        image: PtuneLogo,
+        file:Khatola,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:6,
+        name: "OJana",
+        image: PtuneLogo,
+        file:OJana,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:7,
+        name: "Sachiyaari",
+        image:PtuneLogo,
+        file:SachiYaari,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:8,
+        name: "DilIbadat",
+        image: PtuneLogo,
+        file:DilIbadat,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:9,
+        name: "MyQueen",
+        image: PtuneLogo,
+        file:MyQueen,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:10,
         name: "Kutti Story",
         image: img1,
         file:song1,
@@ -174,7 +380,7 @@ export const songsData = [
         duration:"5:22"
     },
     {
-        id:1,
+        id:11,
         name: "VIP Title Song",
         image: img2,
         file:song2,
@@ -182,7 +388,7 @@ export const songsData = [
         duration:"2:43"
     },
     {
-        id:2,
+        id:12,
         name: "Dharala Prabhu Title Track",
         image: img3,
         file:song3,
@@ -190,7 +396,7 @@ export const songsData = [
         duration:"3:42"
     },
     {
-        id:3,
+        id:13,
         name: "Hukum-Thalaivar Alappara",
         image: img4,
         file:song4,
@@ -198,7 +404,7 @@ export const songsData = [
         duration:"3:26"
     },
     {
-        id:4,
+        id:14,
         name: "Illuminati",
         image: img5,
         file:song5,
@@ -206,7 +412,7 @@ export const songsData = [
         duration:"2:28"
     },
     {
-        id:5,
+        id:15,
         name: "Idhazin Oram-The Innocence of Love",
         image: img6,
         file:song6,
@@ -214,7 +420,7 @@ export const songsData = [
         duration:"3:24"
     },
     {
-        id:6,
+        id:16,
         name: "Vaathi Coming",
         image: img7,
         file:song1,
@@ -222,7 +428,157 @@ export const songsData = [
         duration:"3:48"
     },
     {
+        id:17,
+        name: "What a Karavaad",
+        image: img2,
+        file:song2,
+        desc:"Anirudh Ravichander,Dhanush",
+        duration:"4:27"
+    }
+]
+
+export const randomSongsData = [
+    {
         id:7,
+        name: "Sachiyaari",
+        image:PtuneLogo,
+        file:SachiYaari,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:0,
+        name: "Bewafa",
+        image: PtuneLogo,
+        file:Bewafa,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+     {
+        id:14,
+        name: "Illuminati",
+        image: img5,
+        file:song5,
+        desc:"Sushin Shyam, Dabzee, Vinayak Sasikumar",
+        duration:"2:28"
+    },
+    {
+        id:1,
+        name: "IllegalHathiyar",
+        image: PtuneLogo,
+        file:IllegalHathiyar,
+        desc:" Favorite",
+        duration:"5:00"
+    },
+    {
+        id:2,
+        name: "Surbhee Reverbed",
+        image: PtuneLogo,
+        file:Surbhi,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:10,
+        name: "Kutti Story",
+        image: img1,
+        file:song1,
+        desc:"Aniruth Ravichander,Thalapathy Vijay",
+        duration:"5:22"
+    },
+    {
+        id:3,
+        name: "Kaffara",
+        image:PtuneLogo,
+        file:Kaffara,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:4,
+        name: "KaiseBataiye",
+        image: PtuneLogo,
+        file:KaiseBataiye,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:5,
+        name: "Khatola",
+        image: PtuneLogo,
+        file:Khatola,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:6,
+        name: "OJana",
+        image: PtuneLogo,
+        file:OJana,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    
+    {
+        id:8,
+        name: "DilIbadat",
+        image: PtuneLogo,
+        file:DilIbadat,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    {
+        id:9,
+        name: "MyQueen",
+        image: PtuneLogo,
+        file:MyQueen,
+        desc:"Favorite",
+        duration:"5:00"
+    },
+    
+    {
+        id:11,
+        name: "VIP Title Song",
+        image: img2,
+        file:song2,
+        desc:"Anirudh Ravichander",
+        duration:"2:43"
+    },
+    {
+        id:12,
+        name: "Dharala Prabhu Title Track",
+        image: img3,
+        file:song3,
+        desc:"Anirudh Ravichander",
+        duration:"3:42"
+    },
+    {
+        id:13,
+        name: "Hukum-Thalaivar Alappara",
+        image: img4,
+        file:song4,
+        desc:"Anirudh Ravichander,Super Subu",
+        duration:"3:26"
+    },
+   
+    {
+        id:15,
+        name: "Idhazin Oram-The Innocence of Love",
+        image: img6,
+        file:song6,
+        desc:"Anirudh Ravichander,Ajesh",
+        duration:"3:24"
+    },
+    {
+        id:16,
+        name: "Vaathi Coming",
+        image: img7,
+        file:song1,
+        desc:"Aniruth Ravichander,Thalapathy Vijay",
+        duration:"3:48"
+    },
+    {
+        id:17,
         name: "What a Karavaad",
         image: img2,
         file:song2,
