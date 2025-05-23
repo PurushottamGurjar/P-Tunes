@@ -272,7 +272,7 @@ export const favoriteSongsData = [
     duration: "3:17",
   },
   {
-    id: 10,
+    id: 9,
     name: "My Queen",
     image: PtuneLogo,
     file: MyQueen,
