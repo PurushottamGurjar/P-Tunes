@@ -165,7 +165,7 @@ export const albumsData = [
   {
     id: 9,
     name: "Favorite",
-    image: PtuneLogo,
+    image: profilePic ,
     desc: "You love to listen",
     bgColor: "#22543d",
     bgLightColor: "#33893e",
